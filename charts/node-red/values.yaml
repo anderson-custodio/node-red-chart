@@ -159,7 +159,7 @@ ingress:
     kubernetes.io/tls-acme: "true"
   hosts:
     #  Ingress accepted hostnames
-    - host: chart-example.local
+    - host: ""
       paths:
           # -- The base path
         - path: /
