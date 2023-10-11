@@ -135,7 +135,7 @@ spec:
           {{- end }}
           ports:
             - name: http
-              containerPort: 1880
+              containerPort: 80
               protocol: TCP
           livenessProbe:
             httpGet:
