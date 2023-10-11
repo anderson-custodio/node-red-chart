@@ -159,6 +159,7 @@ ingress:
     - host: ""
       paths:
         - path: /nodered(/|$)(.*)
+          pathType: Prefix
   tls: []
 
 # -- CPU/Memory resource requests/limits
