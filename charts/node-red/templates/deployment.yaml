@@ -139,11 +139,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: /nodered
               port: http
           readinessProbe:
             httpGet:
-              path: /
+              path: /nodered
               port: http
           volumeMounts:
             {{- if and .Values.npmrc.enabled }}
