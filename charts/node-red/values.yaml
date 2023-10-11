@@ -52,7 +52,7 @@ envFrom: []
 serviceAccount:
   # Specifies whether a service account should be created
   # -- Create service account
-  create: true
+  create: false
   # Annotations to add to the service account
   # -- Additional ServiceAccount annotations
   annotations: {}
@@ -164,7 +164,7 @@ ingress:
             service:
               name: node-red
               port:
-                number: 1880
+                number: 80
   tls: []
 
 # -- CPU/Memory resource requests/limits
