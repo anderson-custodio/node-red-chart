@@ -164,7 +164,7 @@ ingress:
             service:
               name: node-red
               port:
-                number: 80
+                number: 1880
   tls: []
 
 # -- CPU/Memory resource requests/limits
