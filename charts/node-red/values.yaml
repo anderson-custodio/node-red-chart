@@ -154,13 +154,14 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /nodered/$1
+    nginx.ingress.kubernetes.io/rewrite-target: /nodered/$2
   hosts:
     - host: ""
       paths:
         - path: /nodered(/|$)(.*)
           pathType: Prefix
   tls: []
+
 
 # -- CPU/Memory resource requests/limits
 resources:
