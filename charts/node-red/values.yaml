@@ -76,7 +76,7 @@ podSecurityContext:
 
 # -- Security Context see [values.yaml](values.yaml)
 securityContext:
-  privileged: false
+  privileged: true
   runAsNonRoot: false
   allowPrivilegeEscalation: true
   readOnlyRootFilesystem: false
