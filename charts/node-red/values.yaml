@@ -77,9 +77,9 @@ podSecurityContext:
 # -- Security Context see [values.yaml](values.yaml)
 securityContext:
   privileged: false
-  runAsNonRoot: true
-  allowPrivilegeEscalation: false
-  readOnlyRootFilesystem: true
+  runAsNonRoot: false
+  allowPrivilegeEscalation: true
+  readOnlyRootFilesystem: false
   runAsGroup: 10003
   runAsUser: 10003
   seccompProfile:
@@ -253,7 +253,8 @@ sidecar:
     # -- Key of the secret that contains the password
     #  key: password
   # -- Extra Node-Modules that will be installed  from the sidecar script
-  extraNodeModules: []
+  extraNodeModules:
+    - node-red-contrib-join-joaoapps
   # -- Extra Environments for the sidecar
   extraEnv: []
   # -- Resources for the sidecar
